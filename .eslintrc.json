@@ -4,12 +4,17 @@
 		"es2021": true
 	},
 	"extends": ["eslint:recommended", "plugin:react/recommended"],
+
+	"parser": "@babel/eslint-parser",
 	"parserOptions": {
+		"allowImportExportEverywhere": false,
 		"ecmaFeatures": {
+			"globalReturn": false,
 			"jsx": true
 		},
-		"ecmaVersion": "latest",
-		"sourceType": "module"
+		"babelOptions": {
+			"configFile": "./babel.config.json"
+		}
 	},
 	"plugins": ["react", "prettier"],
 	"rules": {
@@ -17,5 +22,14 @@
 		"linebreak-style": ["error", "unix"],
 		"quotes": ["error", "single"],
 		"semi": ["error", "never"]
-	}
+	},
+
+	"overrides": [
+		{
+			"files": ["**/*.spec.js", "**/*.spec.jsx"],
+			"env": {
+				"jest": true
+			}
+		}
+	]
 }
