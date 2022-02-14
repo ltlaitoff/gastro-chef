@@ -1,0 +1,7 @@
+{
+	"compilerOptions": {
+		"baseUrl": "src"
+	},
+	"include": ["src", "setupTests.js"],
+	"exclude": ["node_modules"]
+}
