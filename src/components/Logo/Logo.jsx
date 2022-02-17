@@ -5,24 +5,35 @@ import logoIcon from '../../assets/images/logo.png'
 
 import styles from './Logo.module.scss'
 
-const Logo = ({ type, ...args }) => {
+const Logo = ({ type, link, ...args }) => {
+	// const Image = (
+	// 	<img className={styles.image} src={logoIcon} alt='Gastro chaf logo' />
+	// )
+
+	const className = type === 'normal' ? styles.normal : styles.big
+
+	if (link) {
+		return (
+			<Link to='/' className={className} {...args} data-testid='link'>
+				<img className={styles.image} src={logoIcon} alt='Gastro chaf logo' />
+			</Link>
+		)
+	}
 	return (
-		<Link
-			to='/'
-			className={type === 'normal' ? styles.normal : styles.big}
-			{...args}
-		>
+		<div className={className} {...args} data-testid='not-link'>
 			<img className={styles.image} src={logoIcon} alt='Gastro chaf logo' />
-		</Link>
+		</div>
 	)
 }
 
 Logo.propTypes = {
-	type: PropTypes.oneOf(['normal', 'big'])
+	type: PropTypes.oneOf(['normal', 'big']),
+	link: PropTypes.bool
 }
 
 Logo.defaultProps = {
-	type: 'normal'
+	type: 'normal',
+	link: true
 }
 
 export default Logo

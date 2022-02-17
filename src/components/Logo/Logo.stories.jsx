@@ -7,7 +7,8 @@ export default {
 	component: Logo,
 
 	argTypes: {
-		type: ['normal', 'big']
+		type: ['normal', 'big'],
+		link: true
 	}
 }
 const Template = args => (
@@ -24,4 +25,9 @@ Normal.args = {
 export const Big = Template.bind({})
 Big.args = {
 	type: 'big'
+}
+
+export const LinkIsFalse = Template.bind({})
+Big.args = {
+	link: false
 }
