@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Logo from './Logo'
 
 export default {
-	title: 'Example/Logo',
+	title: 'Logo',
 	component: Logo,
 
 	argTypes: {
