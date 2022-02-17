@@ -1,0 +1,28 @@
+.list {
+	display: flex;
+	column-gap: 40px;
+	list-style-type: none;
+	align-items: center;
+}
+
+.item {
+	color: var(--dark);
+}
+
+.link {
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 133.8%;
+
+	color: inherit;
+	cursor: pointer;
+}
+
+.accent {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 133.8%;
+	color: var(--accent);
+}
