@@ -3,11 +3,12 @@ import { BrowserRouter } from 'react-router-dom'
 import Logo from './Logo'
 
 export default {
-	title: 'Example/Logo',
+	title: 'Logo',
 	component: Logo,
 
 	argTypes: {
-		type: ['normal', 'big']
+		type: ['normal', 'big'],
+		link: true
 	}
 }
 const Template = args => (
@@ -24,4 +25,9 @@ Normal.args = {
 export const Big = Template.bind({})
 Big.args = {
 	type: 'big'
+}
+
+export const LinkIsFalse = Template.bind({})
+Big.args = {
+	link: false
 }
