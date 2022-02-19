@@ -3,13 +3,24 @@ import Menu from './Menu'
 import '@testing-library/jest-dom'
 import { render, screen, cleanup } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
+import configureStore from 'redux-mock-store'
+import { Provider } from 'react-redux'
 
 describe('Menu.jsx', () => {
+	let store
+	const initialState = {
+		language: 'ru'
+	}
+	const mockStore = configureStore()
+
 	beforeEach(() => {
+		store = mockStore(initialState)
 		render(
-			<BrowserRouter>
-				<Menu />
-			</BrowserRouter>
+			<Provider store={store}>
+				<BrowserRouter>
+					<Menu />
+				</BrowserRouter>
+			</Provider>
 		)
 	})
 
