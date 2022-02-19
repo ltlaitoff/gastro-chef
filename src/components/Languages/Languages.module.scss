@@ -1,0 +1,31 @@
+.languages {
+	display: flex;
+	column-gap: 15px;
+}
+
+.button {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: none;
+	border-radius: 50px;
+
+	background: var(--bg-light);
+	color: var(--dark);
+
+	box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+
+	font-family: Montserrat;
+	font-size: 15px;
+	line-height: 100%;
+
+	cursor: pointer;
+}
+
+.accent {
+	background: var(--accent);
+	color: #f4f9fe;
+}
