@@ -4,19 +4,23 @@ import { Link } from 'react-router-dom'
 import logoIcon from '../../assets/images/logo.png'
 
 import styles from './Logo.module.scss'
+import classNames from 'classnames'
 
-const Logo = ({ type, link, ...args }) => {
-	const className = type === 'normal' ? styles.normal : styles.big
+const Logo = ({ type, link, className, ...args }) => {
+	const classes = classNames(
+		type === 'normal' ? styles.normal : styles.big,
+		className
+	)
 
 	if (link) {
 		return (
-			<Link to='/' className={className} {...args} data-testid='link'>
+			<Link to='/' className={classes} {...args} data-testid='link'>
 				<img className={styles.image} src={logoIcon} alt='Gastro chaf logo' />
 			</Link>
 		)
 	}
 	return (
-		<div className={className} {...args} data-testid='not-link'>
+		<div className={classes} {...args} data-testid='not-link'>
 			<img className={styles.image} src={logoIcon} alt='Gastro chaf logo' />
 		</div>
 	)
@@ -24,12 +28,14 @@ const Logo = ({ type, link, ...args }) => {
 
 Logo.propTypes = {
 	type: PropTypes.oneOf(['normal', 'big']),
-	link: PropTypes.bool
+	link: PropTypes.bool,
+	className: PropTypes.string
 }
 
 Logo.defaultProps = {
 	type: 'normal',
-	link: true
+	link: true,
+	className: ''
 }
 
 export default Logo
