@@ -1,0 +1,48 @@
+.list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px;
+}
+
+.item {
+	width: 70px;
+	height: 70px;
+
+	display: flex;
+	align-content: center;
+	justify-content: center;
+
+	background: var(--bg-light);
+	box-shadow: 0px 0px 30px rgba(86, 86, 86, 0.25);
+	border-radius: 50%;
+}
+
+.link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	font-family: Comfortaa;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 138.5%;
+
+	text-align: center;
+
+	color: var(--dark);
+
+	text-decoration: none;
+}
+
+.twoComponents {
+	flex-direction: column;
+
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 100%;
+}
+
+.someLeft {
+	padding-right: 3px;
+}
