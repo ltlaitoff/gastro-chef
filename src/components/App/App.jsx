@@ -1,13 +1,12 @@
 import React from 'react'
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
-import HomePage from 'pages/HomePage.jsx'
-import styles from './App.module.scss'
-
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
+
+import HomePage from 'pages/HomePage.jsx'
 import rootReducer from 'store/resucers'
+
+import styles from './App.module.scss'
 
 const store = createStore(rootReducer)
 
