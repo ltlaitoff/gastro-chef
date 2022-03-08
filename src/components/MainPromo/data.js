@@ -34,7 +34,7 @@ export default [
 			ua: '',
 			en: ''
 		},
-		image: 'promo-slide-chery.png',
+		imageName: 'chery',
 		url: ''
 	},
 	{
@@ -59,7 +59,7 @@ export default [
 			ua: '',
 			en: ''
 		},
-		image: 'promo-slide-man',
+		imageName: 'man',
 		url: ''
 	},
 	{
@@ -84,7 +84,7 @@ export default [
 			ua: '',
 			en: ''
 		},
-		image: '',
+		imageName: '',
 		url: ''
 	},
 	{
@@ -109,7 +109,7 @@ export default [
 			ua: '',
 			en: ''
 		},
-		image: '',
+		imageName: '',
 		url: ''
 	}
 ]
