@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 
 import Header from 'components/Header'
 import MenuAddition from 'components/MenuAddition'
+import SlideDots from 'components/SlideDots'
 import MainPromoContent from './components/MainPromoContent'
 import MainPromoImage from './components/MainPromoImage'
 
@@ -23,7 +24,8 @@ const MainPromo = () => {
 				<MainPromoImage imageName={currentSlide.imageName} />
 			</div>
 
-			<div className={styles.dots}></div>
+			<SlideDots slides={DATA} activeId={currentSlideId} />
+			<SlideDots slides={5} activeId={currentSlideId} />
 		</section>
 	)
 }

@@ -1,0 +1,49 @@
+.dots {
+	list-style-type: none;
+
+	display: flex;
+	align-items: center;
+
+	column-gap: 11px;
+}
+
+.dot {
+	width: 13px;
+	height: 13px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+	.button {
+		width: 10px;
+		height: 10px;
+		border: 2px solid var(--accent);
+		border-radius: 50%;
+		background-color: transparent;
+	}
+}
+
+.accent {
+	position: relative;
+	width: 13px;
+	height: 13px;
+
+	.button {
+		width: 100%;
+		height: 100%;
+		border: 2px solid #dee6ee;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 13px;
+			height: 13px;
+			top: 0;
+			left: 0;
+			border: 2px solid var(--accent);
+			border-radius: 50%;
+			clip-path: polygon(0 0, 50% 50%, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+		}
+	}
+}
