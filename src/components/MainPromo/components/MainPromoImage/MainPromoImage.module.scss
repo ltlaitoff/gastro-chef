@@ -1,0 +1,15 @@
+.wrapper {
+	width: 700px;
+	height: 700px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 50%;
+	background: var(--bg-light);
+	box-shadow: 0px 0px 30px rgba(86, 86, 86, 0.3);
+}
+
+.image {
+}

@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from 'components/Logo'
-import Menu from 'components/Menu/Menu.jsx'
-import styles from './Header.module.scss'
-import Languages from 'components/Languages'
 import { useSelector } from 'react-redux'
+
+import Logo from 'components/Logo'
+import Menu from 'components/Menu'
+import Languages from 'components/Languages'
+
+import styles from './Header.module.scss'
 
 const logoText = {
 	ru: 'здоровый рацион',

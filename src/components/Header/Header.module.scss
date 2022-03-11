@@ -1,10 +1,11 @@
 .header {
-	margin: 0 370px 0 330px;
+	margin: 0 40px 0 0px;
 	padding-top: 52px;
 	font-size: 16px;
 
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	column-gap: 20px;
 }
 
 .headerFistPart {
@@ -63,7 +64,6 @@
 .phone {
 	display: inline-block;
 
-	margin-left: 20px;
 	padding: 14px 30px;
 
 	height: 52px;
