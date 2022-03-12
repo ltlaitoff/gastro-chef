@@ -1,0 +1,21 @@
+.logo {
+	margin-top: -100px;
+	width: 264px;
+	height: 264px;
+	padding: 62px 35px;
+	display: inline-block;
+	background: #f5faff;
+	box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+	border-radius: 50%;
+
+	z-index: 2;
+
+	text-decoration: none;
+	&Text {
+		margin-top: -14px;
+		font-family: 'Comfortaa', cursive;
+		font-size: 14px;
+		text-align: center;
+		color: var(--dark);
+	}
+}
