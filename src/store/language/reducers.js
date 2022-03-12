@@ -1,9 +1,9 @@
-import { DEFAULT_LANGUAGE } from 'data/config'
+import { config } from 'data'
 
 import { SET_LANGUAGE } from './actions'
 
 const defaultState = {
-	language: DEFAULT_LANGUAGE
+	language: config.DEFAULT_LANGUAGE
 }
 
 export const languageReducer = (state = defaultState, action) => {

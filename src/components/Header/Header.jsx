@@ -5,14 +5,9 @@ import { useSelector } from 'react-redux'
 import Logo from 'components/Logo'
 import Menu from 'components/Menu'
 import Languages from 'components/Languages'
+import { header as DATA } from 'data'
 
 import styles from './Header.module.scss'
-
-const logoText = {
-	ru: 'здоровый рацион',
-	ua: 'здоровий раціон',
-	en: 'healthy ration'
-}
 
 const Header = () => {
 	const currentLanguage = useSelector(store => store.language.language)
@@ -22,7 +17,9 @@ const Header = () => {
 			<div className={styles.headerFistPart}>
 				<Link to='/' className={styles.logo}>
 					<Logo link={false} />
-					<div className={styles.logoText}>{logoText[currentLanguage]}</div>
+					<div className={styles.logoText}>
+						{DATA.logoText[currentLanguage]}
+					</div>
 				</Link>
 
 				<div className={styles.wrapper}>

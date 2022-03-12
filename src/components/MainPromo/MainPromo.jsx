@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import classNames from 'classnames'
 import { useKeenSlider } from 'keen-slider/react'
+import { MainPromo as DATA } from 'data'
 
 import Header from 'components/Header'
 import MenuAddition from 'components/MenuAddition'
@@ -9,7 +10,6 @@ import SlideDots from 'components/SlideDots'
 
 import MainPromoContent from './components/MainPromoContent'
 import MainPromoImage from './components/MainPromoImage'
-import DATA from './data.js'
 
 import 'keen-slider/keen-slider.scss'
 import styles from './MainPromo.module.scss'
