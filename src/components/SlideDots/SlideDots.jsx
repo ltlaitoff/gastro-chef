@@ -11,7 +11,7 @@ const prepareSlides = slides => {
 	}))
 }
 
-const SlideDots = ({ slides, activeId, className, ...args }) => {
+const SlideDots = ({ slides, activeId, className, onClick, ...args }) => {
 	const slidesArray = prepareSlides(slides)
 
 	return (
@@ -25,6 +25,7 @@ const SlideDots = ({ slides, activeId, className, ...args }) => {
 						className={classNames(styles.dot, {
 							[styles.accent]: activeId === slideId
 						})}
+						onClick={() => onClick(slideId)}
 					>
 						<button className={styles.button}></button>
 					</li>
@@ -44,7 +45,8 @@ SlideDots.propTypes = {
 		PropTypes.number
 	]),
 	activeId: PropTypes.number.isRequired,
-	className: PropTypes.string
+	className: PropTypes.string,
+	onClick: PropTypes.func
 }
 
 export default SlideDots
