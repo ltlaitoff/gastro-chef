@@ -5,21 +5,7 @@ import styles from './Languages.module.scss'
 import { useDispatch, useSelector } from 'react-redux'
 import { setLanguage } from 'store/language'
 import classNames from 'classnames'
-
-const LANGUAGES_LIST = [
-	{
-		id: 0,
-		code: 'ru'
-	},
-	{
-		id: 1,
-		code: 'ua'
-	},
-	{
-		id: 2,
-		code: 'en'
-	}
-]
+import { Languages as DATA } from 'data'
 
 const Languages = ({ className, ...args }) => {
 	const dispatch = useDispatch()
@@ -31,7 +17,7 @@ const Languages = ({ className, ...args }) => {
 
 	return (
 		<div className={classNames(styles.languages, className)} {...args}>
-			{LANGUAGES_LIST.map(language => {
+			{DATA.map(language => {
 				return (
 					<button
 						key={language.id}

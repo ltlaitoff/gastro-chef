@@ -1,27 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import Logo from 'components/Logo'
-import Menu from 'components/Menu/Menu.jsx'
-import styles from './Header.module.scss'
-import Languages from 'components/Languages'
-import { useSelector } from 'react-redux'
 
-const logoText = {
-	ru: 'здоровый рацион',
-	ua: 'здоровий раціон',
-	en: 'healthy ration'
-}
+import Menu from 'components/Menu'
+import Languages from 'components/Languages'
+import HeaderLogo from './components/HeaderLogo'
+
+import styles from './Header.module.scss'
 
 const Header = () => {
-	const currentLanguage = useSelector(store => store.language.language)
-
 	return (
 		<header className={styles.header}>
 			<div className={styles.headerFistPart}>
-				<Link to='/' className={styles.logo}>
-					<Logo link={false} />
-					<div className={styles.logoText}>{logoText[currentLanguage]}</div>
-				</Link>
+				<HeaderLogo />
 
 				<div className={styles.wrapper}>
 					<Menu className={styles.menu} />
