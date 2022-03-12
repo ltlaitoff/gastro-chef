@@ -9,8 +9,8 @@ export default [
 
 		text: {
 			ru: 'Ккал',
-			ua: '',
-			en: ''
+			ua: 'Ккал',
+			en: 'Kcal'
 		},
 		link: ''
 	},

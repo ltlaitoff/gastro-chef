@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux'
 import ReactMarkdown from 'react-markdown'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
+
 import styles from './MainPromoContent.module.scss'
 
 const transformText = text => {
@@ -11,9 +13,15 @@ const transformText = text => {
 		em: ({ node, ...props }) => <span className={styles.green} {...props} />,
 
 		// eslint-disable-next-line no-unused-vars
+		code: ({ node, ...props }) => (
+			<span className={classNames(styles.green, styles.block)} {...props} />
+		),
+
+		// eslint-disable-next-line no-unused-vars
 		strong: ({ node, ...props }) => (
 			<span className={styles.greenBig} {...props} />
 		),
+
 		p: React.Fragment
 	}
 
