@@ -1,0 +1,6 @@
+export * as config from './config'
+export { default as MenuAddition } from './MenuAddition'
+export { default as MainPromo } from './MainPromo'
+export { default as Menu } from './Menu'
+export { default as Languages } from './Languages'
+export * as header from './Header'

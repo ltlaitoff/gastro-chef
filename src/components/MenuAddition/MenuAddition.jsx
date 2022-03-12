@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import DATA from './data.js'
+import { MenuAddition as DATA } from 'data'
 import styles from './MenuAddition.module.scss'
 import classNames from 'classnames'
 import { useSelector } from 'react-redux'
