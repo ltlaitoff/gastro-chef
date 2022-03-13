@@ -2,6 +2,8 @@
 	overflow-x: hidden;
 
 	position: relative;
+	min-height: 1233px;
+
 	&::before {
 		content: '';
 		position: absolute;
