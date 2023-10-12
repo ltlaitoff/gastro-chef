@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgastro_chef=self.webpackChunkgastro_chef||[]).push([[969],{969:function(c,e,s){c.exports=s.p+"static/media/promo-slide-man.61743b4c4c951f0523cd.png"}}]);

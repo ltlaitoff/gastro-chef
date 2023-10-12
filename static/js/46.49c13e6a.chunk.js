@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgastro_chef=self.webpackChunkgastro_chef||[]).push([[46],{46:function(s,e,c){s.exports=c.p+"static/media/promo-slide-fish.f1278bdf1c4708b53660.png"}}]);

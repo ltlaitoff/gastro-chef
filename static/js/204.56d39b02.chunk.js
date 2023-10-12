@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgastro_chef=self.webpackChunkgastro_chef||[]).push([[204],{204:function(e,s,c){e.exports=c.p+"static/media/delivery.a6b07c8b6e6c1869193b.svg"}}]);

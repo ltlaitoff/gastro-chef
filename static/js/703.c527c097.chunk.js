@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgastro_chef=self.webpackChunkgastro_chef||[]).push([[703],{703:function(e,s,t){e.exports=t.p+"static/media/waiter.0713b48d2b365389175f.svg"}}]);

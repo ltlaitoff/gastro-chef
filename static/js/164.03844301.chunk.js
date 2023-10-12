@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgastro_chef=self.webpackChunkgastro_chef||[]).push([[164],{255:function(e,s,t){e.exports=t.p+"static/media/meat.b0f351e964b69b4344ad.svg"}}]);

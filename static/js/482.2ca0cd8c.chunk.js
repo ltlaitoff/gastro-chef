@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgastro_chef=self.webpackChunkgastro_chef||[]).push([[482],{482:function(e,s,c){e.exports=c.p+"static/media/promo-slide-chery.bc85d6576a4d15711922.png"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgastro_chef=self.webpackChunkgastro_chef||[]).push([[522],{522:function(e,s,a){e.exports=a.p+"static/media/promo-slide-avocado.25dab57f1667dee3c087.png"}}]);
